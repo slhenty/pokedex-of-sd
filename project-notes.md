@@ -43,7 +43,7 @@ This hierarchy proposes the UI components that will compose to form the views
 
 - [ ] Detail Page
     - [ ] Info Card
-        - [ ] Avatar
+        - [ ] Avatar - WIP
         - [ ] Info Block
     - [ ] Map (w/pin)
 - [ ] Main Page
