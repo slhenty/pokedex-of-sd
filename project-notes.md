@@ -36,6 +36,8 @@
 - [x] CRA2 seed
 - [x] .gitignore adjustment (keep that repo we create clean from the outset) - DONE
 - [x] storybook
+- [x] redux
+
 
 ### UI Components
 #### Write storybook 'stories'
