@@ -35,7 +35,7 @@
 ### Project standup
 - [x] CRA2 seed
 - [x] .gitignore adjustment (keep that repo we create clean from the outset) - DONE
-- [ ] storybook
+- [x] storybook
 
 ### UI Components
 #### Write storybook 'stories'
