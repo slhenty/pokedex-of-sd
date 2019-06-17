@@ -2,16 +2,16 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import Avatar from './Avatar';
-import logo from '../logo.svg';
+import Component from './Avatar';
+import { props as InfoBlockProps } from './InfoBlock.stories';
 
-const avatar = {
-  name: 'My Pokemon',
-  image: logo
+const props = {
+  name: InfoBlockProps.name,
+  sprites: InfoBlockProps.sprites
 };
 
 storiesOf('Avatar', module)
-    .add('default', () => <Avatar {...avatar} />)
-    .add('no image', () => <Avatar name={avatar.name} />)
-    .add('no name', () => <Avatar image={avatar.image} />)
-    .add('no data', () => <Avatar />);
+    .add('default', () => <Component {...props} />)
+    .add('no image', () => <Component name={props.name} />)
+    .add('no name', () => <Component sprites={props.sprites} />)
+    .add('no data', () => <Component />);
