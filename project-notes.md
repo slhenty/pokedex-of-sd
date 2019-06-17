@@ -44,9 +44,10 @@
 This hierarchy proposes the UI components that will compose to form the views
 
 - [ ] Detail Page
-    - [ ] Info Card
-        - [ ] Avatar - WIP
-        - [ ] Info Block
+    - [x] Avatar - ui
+    - [x] Info Block - ui
+    - [x] Abilities Block - ui
+    - [ ] Bag Selector
     - [ ] Map (w/pin)
 - [ ] Main Page
     - [ ] Gallery Actions
