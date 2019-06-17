@@ -47,7 +47,7 @@ This hierarchy proposes the UI components that will compose to form the views
     - [x] Avatar - ui
     - [x] Info Block - ui
     - [x] Abilities Block - ui
-    - [ ] Bag Selector
+    - [ ] Bag Selector - WIP (~~ui~~, appstore)
     - [ ] Map (w/pin)
 - [ ] Main Page
     - [ ] Gallery Actions
