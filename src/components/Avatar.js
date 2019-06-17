@@ -2,25 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Avatar = (props) => {
+  const image = props.sprites && (props.sprites.front_default || props.sprites.back_default);
+  const { name='unknown' } = props;
 
-  // TODO: add default value for name, but prolly not here...
-  //  perhaps in the connected container or the app state selector
   return (
-      <React.Fragment>
-        <figure className={'pd-avatar'}>
-          <img className={'pd-avatar-image'}
-               src={props.image}
-               alt={'(Pokemon avatar, centered)'}/>
-          <figcaption className={'pd-avatar-caption'}>{props.name}
-          </figcaption>
-        </figure>
-      </React.Fragment>
+      <figure className={'pd-avatar'}>
+        <img className={'pd-avatar-image'}
+             src={image}
+             alt={`Pokemon: ${name}`}/>
+        <figcaption className={'pd-avatar-caption'}>{name}
+        </figcaption>
+      </figure>
   );
 };
 
 Avatar.propTypes = {
   name: PropTypes.string,
-  image: PropTypes.string
+  sprites: PropTypes.shape({
+    back_default: PropTypes.string,
+    front_default: PropTypes.string
+  })
 };
 
 export default Avatar;
