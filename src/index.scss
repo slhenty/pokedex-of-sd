@@ -1,88 +1,88 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 :root {
-    --pd-label-color: gray;
-    --pd-field-color: black;
+  --pd-label-color: gray;
+  --pd-field-color: black;
 }
 
 figure.pd-avatar {
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    margin-block-start: 0;
-    margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .pd-avatar {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .pd-avatar-image {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .pd-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .pd-field {
+    flex: auto;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+    align-items: baseline;
+    margin-bottom: 1em;
 
-    .pd-field {
-        flex: auto;
-        display: flex;
-        align-items: baseline;
-        margin-bottom: 1em;
-
-        label {
-            flex: 0 0 0;
-            margin-right: 0.5em;
+    label {
+      flex: 0 0 0;
+      margin-right: 0.5em;
             color: var(--pd-label-color, gray);
 
-            &:after {
-                content: ":";
-            }
-        }
-
-        .pd-field-value {
-            flex: auto;
-            margin: 0;
-            color: var(--pd-field-color, black);
-        }
+      &:after {
+        content: ":";
+      }
     }
 
-    .pd-types {
-        flex: auto;
-        display: flex;
-        align-items: baseline;
-        margin-bottom: 1em;
-
-        .pd-type {
-            flex: 0 0 0;
-            margin: 0 0.5em;
-        }
+    .pd-field-value {
+      flex: auto;
+      margin: 0;
+      color: var(--pd-field-color, black);
     }
+  }
 
-    .pd-description {
-        flex: auto;
-        overflow: scroll;
+  .pd-types {
+    flex: auto;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1em;
+
+    .pd-type {
+      flex: 0 0 0;
+      margin: 0 0.5em;
     }
+  }
+
+  .pd-description {
+    flex: auto;
+    overflow: scroll;
+  }
 }
 
 .pd-no-info {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .pd-abilities {
@@ -107,4 +107,24 @@ figure.pd-avatar {
             margin-left: 0.5em;
         }
     }
+}
+
+.pd-bag-selector {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .pd-field {
+    flex: auto;
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 1em;
+    color: var(--pd-field-color, black);
+
+    .pd-checkbox {
+      flex: auto;
+      font-size: 1em;
+    }
+  }
 }
