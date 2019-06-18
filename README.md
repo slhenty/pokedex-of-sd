@@ -1,6 +1,12 @@
 # Pokedex
-A coding exercise completed by Steve Henty for Intuit
+A coding exercise by Steve Henty for Intuit
 6/2019
+
+#### Current State
+Launches a Storybook of primitive components. Next steps would include:
+- wire up the redux connector for BagSelector
+- write localStorage side-effects for pokeBag redux slice
+- complete remaining components, per project plan in project-notes.md (see link below)
 
 ## Links and Info
 

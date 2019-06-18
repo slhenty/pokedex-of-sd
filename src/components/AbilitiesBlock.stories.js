@@ -14,6 +14,8 @@ storiesOf('AbilitiesBlock', module)
     .add('default', () => <Component pokeId={props.id} pokeInfo={props}/>)
     .add('no info', () => <Component/>);
 
+// uncomment to see more in-depth study of how this component adjusts to narrow widths
+/*
 storiesOf('AbilitiesBlock - window width', module)
     .add('default',
         () => <div style={{width: 'initial', border: 'solid gray 1px'}}>
@@ -45,3 +47,4 @@ storiesOf('AbilitiesBlock - 50px width', module)
     .add('no info',
         () => <div style={{width: '50px', border: 'solid gray 1px'}}>
           <Component/></div>);
+*/
